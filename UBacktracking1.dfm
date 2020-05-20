@@ -13,16 +13,32 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
+  object lblResult: TLabel
+    Left = 40
+    Top = 336
+    Width = 43
+    Height = 19
+    Caption = 'Result'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object Cities: TStringGrid
     Left = 0
     Top = 56
     Width = 449
     Height = 265
+    ColCount = 6
+    RowCount = 6
     TabOrder = 0
     ColWidths = (
       64
       64
       65
+      64
       64
       64)
   end
@@ -33,6 +49,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'Result'
     TabOrder = 1
+    OnClick = btnResultClick
   end
   object edtResult: TEdit
     Left = 32
@@ -42,7 +59,7 @@ object Form1: TForm1
     ReadOnly = True
     TabOrder = 2
   end
-  object btnFillRoads: TButton
+  object btnPrintRoads: TButton
     Left = 16
     Top = 0
     Width = 105
