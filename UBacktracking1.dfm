@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 804
-  Top = 271
-  Width = 652
-  Height = 537
+  Left = 435
+  Top = 211
+  Width = 846
+  Height = 330
   Caption = 'Form1'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,8 +14,8 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object lblResult: TLabel
-    Left = 40
-    Top = 336
+    Left = 24
+    Top = 232
     Width = 43
     Height = 19
     Caption = 'Result'
@@ -26,11 +26,37 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
+  object lblRoads: TLabel
+    Left = 8
+    Top = 40
+    Width = 57
+    Height = 18
+    Caption = 'Roads'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblMinimalRoads: TLabel
+    Left = 424
+    Top = 40
+    Width = 87
+    Height = 18
+    Caption = 'MinimalRoads'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object Cities: TStringGrid
     Left = 0
-    Top = 56
-    Width = 449
-    Height = 265
+    Top = 64
+    Width = 401
+    Height = 161
     ColCount = 6
     RowCount = 6
     TabOrder = 0
@@ -52,9 +78,9 @@ object Form1: TForm1
     OnClick = btnResultClick
   end
   object edtResult: TEdit
-    Left = 32
-    Top = 360
-    Width = 225
+    Left = 0
+    Top = 256
+    Width = 241
     Height = 21
     ReadOnly = True
     TabOrder = 2
@@ -67,5 +93,21 @@ object Form1: TForm1
     Caption = 'PrintRoads'
     TabOrder = 3
     OnClick = PrintRoadsClick
+  end
+  object MinCitRoads: TStringGrid
+    Left = 416
+    Top = 64
+    Width = 401
+    Height = 161
+    ColCount = 6
+    RowCount = 6
+    TabOrder = 4
+    ColWidths = (
+      64
+      64
+      65
+      64
+      64
+      64)
   end
 end
